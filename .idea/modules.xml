@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CS5010.iml" filepath="$PROJECT_DIR$/.idea/CS5010.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab4_Questionnaires/lab4_Questionnaires.iml" filepath="$PROJECT_DIR$/lab4_Questionnaires/lab4_Questionnaires.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab5_bignumber/lab5_bignumber.iml" filepath="$PROJECT_DIR$/lab5_bignumber/lab5_bignumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proj3Maze/proj3Maze.iml" filepath="$PROJECT_DIR$/proj3Maze/proj3Maze.iml" />
+    </modules>
+  </component>
+</project>

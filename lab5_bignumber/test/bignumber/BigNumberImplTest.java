@@ -1,5 +1,5 @@
-import bignumber.BigNumber;
-import bignumber.BigNumberImpl;
+package bignumber;
+
 import org.junit.Test;
 
 import java.util.Arrays;

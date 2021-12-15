@@ -1,6 +1,5 @@
 package bignumber;
 
-
 public class BigNumberImpl implements BigNumber {
 
     private Node head;
@@ -52,12 +51,14 @@ public class BigNumberImpl implements BigNumber {
         }
 
         while (shiftNumber > 0) {
+
             Node prev = new Node(0);
             prev.setNext(head);
             head = prev;
             shiftNumber--;
+//            System.out.println(this.toString());
         }
-        removeDigit();
+//        removeDigit();
 
     }
 
@@ -84,67 +85,16 @@ public class BigNumberImpl implements BigNumber {
             return;
         }
 
-        Node ptr = head;
-        while (ptr.getNext() != null && shiftNumber > 0) {
-            ptr = ptr.getNext();
+        while (head.getNext() != null && shiftNumber > 0) {
+            head = head.getNext();
             shiftNumber--;
         }
-        head = ptr;
+
         if (shiftNumber > 0) {
-            head.setNext(null);
             head.setValue(0);
         }
         removeDigit();
     }
-
-
-//    @Override
-//    public void shiftLeft(int shiftNumber) {
-//        if (head.getValue() <= 0 && this.length() <= 1) {
-//            return;
-//        }
-//
-//        if (shiftNumber < 0) {
-//            shiftNumber = -shiftNumber;
-//            shiftRight(shiftNumber);
-//            return;
-//        }
-//
-//        while (shiftNumber > 0) {
-//            Node prev = new Node(0);
-//            prev.setNext(head);
-//            head = prev;
-//            shiftNumber--;
-//        }
-//    }
-//
-//    @Override
-//    public void shiftRight(int shiftNumber) {
-//        if (head.getValue() <= 0 && this.length() <= 1) {
-//            return;
-//        }
-//
-//        if (shiftNumber == 0) {
-//            return;
-//        }
-//
-//        if (shiftNumber < 0) {
-//            shiftNumber = -shiftNumber;
-//            shiftLeft(shiftNumber);
-//            return;
-//        }
-//
-//        Node ptr = head;
-//        while (ptr.getNext() != null && shiftNumber > 0) {
-//            ptr = ptr.getNext();
-//            shiftNumber--;
-//        }
-//        head = ptr;
-//        if (shiftNumber > 0) {
-//            head.setNext(null);
-//            head.setValue(0);
-//        }
-//    }
 
     @Override
     public void addDigit(int digit) {

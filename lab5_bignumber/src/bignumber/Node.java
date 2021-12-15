@@ -2,11 +2,10 @@ package bignumber;
 
 public class Node {
     private int value;
-    private Node next;
+    private Node next = null;
 
     public Node(int value) {
         this.value = value;
-        this.next = null;
     }
 
     public int getValue() {
